@@ -21,11 +21,11 @@ code {
 .App {
   max-width: 360px;
   margin: 32px auto;
-  background-color: #ECEFF1;
+  /* background-color: #ECEFF1; */
 }
 
 .title-bar {
-  background-color: #9EA7AA;
+  /* background-color: #9EA7AA; */
   height: 56px;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ code {
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: #CFD8DC;
+  /* background-color: #CFD8DC; */
   margin: 0;
   padding: 16px 0;
 }
@@ -70,6 +70,6 @@ code {
   width: 100%;
   padding: 12px 16px;
   border-radius: 4px;
-  background-color: #CFD8DC;
+  /* background-color: #CFD8DC; */
   margin-bottom: 16px;
 }
