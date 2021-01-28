@@ -8,8 +8,18 @@ function TodoItemsContextProvider (props) {
     {title: 'Get some milk', id: 2},
     {title: 'Pay the bills', id: 3}
   ]);
+
+  const addItem = (title) => {
+    setItems([...items, {title:title, id: Date.now()}])
+  }
+
+  const removeItem = (id) => {
+    const newArray = items.filter((item) => item.id !== id);
+    setItems(newArray)
+  }
+
   return (
-    <TodoItemsContext.Provider value={{items}}>
+    <TodoItemsContext.Provider value={{items, addItem: addItem, removeItem: removeItem}}>
       {props.children}
     </TodoItemsContext.Provider>
   )
