@@ -7,18 +7,11 @@ class ThemeContextProvider extends React.Component {
     isLightTheme: true,
     lightTheme: {text: '#000', titleBar: '#9EA7AA', nav: '#CFD8DC', body:'#ECEFF1'},
     darkTheme: {text: '#cfd8dc', titleBar: '#37474f', nav: '#4f5b62', body:'#263238'},
-    isLoggedIn: false
   }
 
   switchTheme = () => {
     this.setState({
       isLightTheme: !this.state.isLightTheme
-    })
-  }
-
-  switchAuth = () => {
-    this.setState({
-      isLoggedIn: !this.state.isLoggedIn
     })
   }
 
