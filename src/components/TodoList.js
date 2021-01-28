@@ -15,6 +15,7 @@ function TodoList() {
     const handleSubmit = (e) => {
       e.preventDefault();
       addItem(title);
+      setTitle('')
     }
 
     return (
